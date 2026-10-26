@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HawkSpot | Iowa City Student Guide</title>
+  <style>
+    :root {
+      --red: #a51d32;
+      --gold: #f2c14e;
+      --cream: #fffaf0;
+      --dark: #29262a;
+      --white: #ffffff;
+      --muted: #f5e9dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--cream);
+    }
+
+    .notice {
+      padding: 12px 18px;
+      background: #fff0cf;
+      color: #49351b;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    header {
+      background: var(--red);
+      color: var(--white);
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    header p { margin: 5px 0 0; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px;
+      background: var(--dark);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 13px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav a:focus {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 28px 20px 45px;
+    }
+
+    .hero {
+      background: var(--muted);
+      border-radius: 14px;
+      padding: 35px 25px;
+      border-left: 7px solid var(--gold);
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      color: var(--red);
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 7px;
+      margin: 8px 8px 0 0;
+      font-weight: bold;
+    }
+
+    .button:hover, .button:focus {
+      background: #7e1425;
+    }
+
+    .section-title {
+      color: var(--red);
+      margin-top: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid #eadfd4;
+      border-radius: 12px;
+      padding: 21px;
+      box-shadow: 0 3px 10px rgba(41, 38, 42, 0.05);
+    }
+
+    .card h3 { margin-top: 0; color: var(--red); }
+
+    .tag {
+      display: inline-block;
+      background: #fff0cf;
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 0.83rem;
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 25px 18px;
+    }
+
+    footer p { margin: 8px auto; max-width: 850px; }
+    footer a { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; text-align: center; }
+      nav a { padding: 10px; }
+      main { padding: 20px 15px 35px; }
+      .hero { padding: 25px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+  </div>
+
+  <header>
+    <h1>HawkSpot</h1>
+    <p>Your guide to student life in Iowa City</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="weekend.html">Weekend Activities</a>
+    <a href="cheap.html">Cheap Things to Do</a>
+    <a href="students.html">College Student Guide</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <span class="tag">Made for Hawkeyes</span>
+      <h2>Find your next favorite Iowa City experience.</h2>
+      <p>
+        Looking for weekend plans, affordable activities, or something fun to do
+        with friends between classes? HawkSpot brings together fictional local
+        deals, student-friendly events, and ideas for making the most of life
+        in Iowa City.
+      </p>
+      <a class="button" href="weekend.html">Explore This Weekend</a>
+      <a class="button" href="cheap.html">Find Budget-Friendly Fun</a>
+    </section>
+
+    <h2 class="section-title">What's happening at HawkSpot?</h2>
+    <section class="cards">
+      <article class="card">
+        <h3>Weekend Plans</h3>
+        <p>
+          Fill your Saturday and Sunday with a campus photo challenge, a
+          downtown art walk, or a relaxed evening with friends.
+        </p>
+        <a href="weekend.html">Explore weekend ideas →</a>
+      </article>
+
+      <article class="card">
+        <h3>Fun for Less</h3>
+        <p>
+          Find activities that fit a student budget, from free outdoor
+          adventures to a fictional discount at a neighborhood café.
+        </p>
+        <a href="cheap.html">See affordable activities →</a>
+      </article>
+
+      <article class="card">
+        <h3>Student Life</h3>
+        <p>
+          Discover ways to meet people, support campus traditions, enjoy
+          sports-inspired activities, and explore beyond the classroom.
+        </p>
+        <a href="students.html">Explore student life →</a>
+      </article>
+    </section>
+
+    <h2 class="section-title">Featured this week</h2>
+    <section class="cards">
+      <article class="card">
+        <span class="tag">Friday</span>
+        <h3>Hawkeye Hangout</h3>
+        <p>
+          Join the fictional HawkSpot crew for board games, music, and
+          conversation at the made-up Campus Corner Lounge.
+        </p>
+        <p><strong>Fictional price:</strong> Free entry</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Saturday</span>
+        <h3>Downtown Discovery Walk</h3>
+        <p>
+          Explore downtown storefronts, find colorful murals, and take photos
+          with friends on a self-guided walking adventure.
+        </p>
+        <p><strong>Fictional price:</strong> Free</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Sunday</span>
+        <h3>Study Break Special</h3>
+        <p>
+          The fictional Red Brick Café offers a student hot chocolate special
+          for anyone who needs a cozy break before a new week of classes.
+        </p>
+        <p><strong>Fictional price:</strong> $2 hot chocolate</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">Your city, your plans</h2>
+    <p>
+      HawkSpot is designed around the things college students care about:
+      affordable outings, memorable experiences, local discoveries, and
+      opportunities to connect with other Hawkeyes. Browse our guides and
+      choose an adventure that fits your schedule and budget.
+    </p>
+    <p>
+      All businesses, prices, promotions, and events featured on this
+      educational project are fictional and have been created for the website.
+      They are not actual offers or announcements.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+    </p>
+    <p>HawkSpot | Dream up your next Iowa City adventure.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="weekend.html">Weekend Activities</a> |
+      <a href="cheap.html">Cheap Things to Do</a> |
+      <a href="students.html">College Student Guide</a>
+    </p>
+  </footer>
+</body>
+</html>
