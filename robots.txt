@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kmkiep05.github.io/iowa-city-favorites/sitemap.xml
