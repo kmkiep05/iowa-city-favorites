@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekend Activities | HawkSpot</title>
+  <style>
+    :root {
+      --red: #a51d32;
+      --gold: #f2c14e;
+      --cream: #fffaf0;
+      --dark: #29262a;
+      --white: #ffffff;
+      --muted: #f5e9dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--cream);
+    }
+
+    .notice {
+      padding: 12px 18px;
+      background: #fff0cf;
+      color: #49351b;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    header {
+      background: var(--red);
+      color: var(--white);
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    header p { margin: 5px 0 0; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px;
+      background: var(--dark);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 13px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav a:focus {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 28px 20px 45px;
+    }
+
+    .intro {
+      background: var(--muted);
+      border-left: 7px solid var(--gold);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 28px;
+    }
+
+    h2, h3 { color: var(--red); }
+    .intro h2 { margin-top: 0; font-size: 2rem; }
+
+    .day-title {
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 8px;
+      margin-top: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid #eadfd4;
+      border-radius: 12px;
+      padding: 21px;
+      box-shadow: 0 3px 10px rgba(41, 38, 42, 0.05);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .tag {
+      display: inline-block;
+      background: #fff0cf;
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 0.83rem;
+      font-weight: bold;
+    }
+
+    .note {
+      padding: 18px;
+      border-radius: 9px;
+      background: #f1e8e1;
+      margin-top: 30px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 25px 18px;
+    }
+
+    footer p { margin: 8px auto; max-width: 850px; }
+    footer a { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; text-align: center; }
+      nav a { padding: 10px; }
+      main { padding: 20px 15px 35px; }
+      .intro { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+  </div>
+
+  <header>
+    <h1>HawkSpot</h1>
+    <p>Your guide to student life in Iowa City</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="weekend.html" aria-current="page">Weekend Activities</a>
+    <a href="cheap.html">Cheap Things to Do</a>
+    <a href="students.html">College Student Guide</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <span class="tag">Your Weekend Guide</span>
+      <h2>Things to Do in the Iowa City Area This Weekend</h2>
+      <p>
+        Whether you want to get outside, discover downtown, catch a game-day
+        atmosphere, or spend time with friends, there's always a new way to
+        plan your weekend. Start with these fictional HawkSpot event ideas.
+      </p>
+      <p>
+        The activities, schedules, prices, and venues on this page are invented
+        for a class project, not real local listings.
+      </p>
+    </section>
+
+    <h2 class="day-title">Friday: Kick Off the Weekend</h2>
+    <section class="cards">
+      <article class="card">
+        <span class="tag">5:00–7:00 p.m.</span>
+        <h3>Downtown Art & Photo Walk</h3>
+        <p>
+          Meet fictional student host Maya Brooks at the made-up Ped Mall
+          Welcome Point. Explore colorful storefronts, look for interesting
+          public art, and take photos with your friends.
+        </p>
+        <p><strong>Location:</strong> Downtown Iowa City</p>
+        <p><strong>Fictional cost:</strong> Free</p>
+        <p><strong>Good for:</strong> Friends and photography fans</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">7:30–9:30 p.m.</span>
+        <h3>Campus Corner Game Night</h3>
+        <p>
+          Spend the evening playing trivia, cards, and board games at the
+          fictional Campus Corner Lounge. Teams can compete for a made-up
+          HawkSpot champion title.
+        </p>
+        <p><strong>Location:</strong> Fictional Campus Corner Lounge</p>
+        <p><strong>Fictional cost:</strong> Free entry</p>
+        <p><strong>Good for:</strong> Meeting people and friendly competition</p>
+      </article>
+    </section>
+
+    <h2 class="day-title">Saturday: Get Out and Explore</h2>
+    <section class="cards">
+      <article class="card">
+        <span class="tag">9:00–11:00 a.m.</span>
+        <h3>Hawkeye Morning Walk</h3>
+        <p>
+          Start your morning with a relaxed walk along a local trail. Bring a
+          water bottle, wear comfortable shoes, and invite a friend who wants
+          a break from studying.
+        </p>
+        <p><strong>Location:</strong> Iowa City area trails</p>
+        <p><strong>Fictional cost:</strong> Free</p>
+        <p><strong>Good for:</strong> Fresh air and light exercise</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">12:00–2:00 p.m.</span>
+        <h3>Student Street-Food Social</h3>
+        <p>
+          Imagine a courtyard filled with food stalls, music, and picnic tables.
+          This fictional pop-up invites students to sample different flavors
+          and vote for their favorite lunch.
+        </p>
+        <p><strong>Location:</strong> Fictional Riverfront Courtyard</p>
+        <p><strong>Fictional cost:</strong> $5–$12 per person</p>
+        <p><strong>Good for:</strong> Food lovers and groups</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Afternoon</span>
+        <h3>Hawkeye Sports Watch Party</h3>
+        <p>
+          Put on black and gold, meet friends, and enjoy the excitement of
+          college sports at a fictional student watch party. Check official
+          University of Iowa athletics information for real game schedules.
+        </p>
+        <p><strong>Location:</strong> Fictional Black & Gold Social Club</p>
+        <p><strong>Fictional cost:</strong> Free entry</p>
+        <p><strong>Good for:</strong> Sports fans</p>
+      </article>
+    </section>
+
+    <h2 class="day-title">Sunday: Recharge Before Monday</h2>
+    <section class="cards">
+      <article class="card">
+        <span class="tag">10:00 a.m.–12:00 p.m.</span>
+        <h3>Cozy Café & Journaling</h3>
+        <p>
+          Bring a journal, sketchbook, or book and settle in for a quiet
+          morning at the fictional Red Brick Café. Reflect on the past week
+          and make a simple plan for the next one.
+        </p>
+        <p><strong>Location:</strong> Fictional Red Brick Café</p>
+        <p><strong>Fictional budget:</strong> $3–$8 for a drink or snack</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">1:00–3:00 p.m.</span>
+        <h3>Creative Craft Meetup</h3>
+        <p>
+          Make friendship bracelets, decorate a notebook, or create a collage
+          with other students. Bring supplies you already have and trade
+          materials to keep the afternoon inexpensive.
+        </p>
+        <p><strong>Location:</strong> Fictional HawkSpot Student Hub</p>
+        <p><strong>Fictional cost:</strong> $2 suggested supply contribution</p>
+      </article>
+    </section>
+
+    <section class="note">
+      <h2>Build Your Own Weekend</h2>
+      <p>
+        Pair a free morning walk with a downtown afternoon, then finish with
+        game night. For a lower-cost weekend, bring snacks from home, share
+        transportation when appropriate, and choose activities that do not
+        require tickets.
+      </p>
+      <p>
+        Remember that all events and prices above are fictional examples.
+        Confirm real venue details, opening hours, and official sports
+        schedules before making actual plans.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+    </p>
+    <p>HawkSpot | Dream up your next Iowa City adventure.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="weekend.html">Weekend Activities</a> |
+      <a href="cheap.html">Cheap Things to Do</a> |
+      <a href="students.html">College Student Guide</a>
+    </p>
+  </footer>
+</body>
+</html>
