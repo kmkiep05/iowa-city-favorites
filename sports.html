@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sporting Events This Weekend | HawkSpot</title>
+  <style>
+    :root {
+      --red: #a51d32;
+      --gold: #f2c14e;
+      --cream: #fffaf0;
+      --dark: #29262a;
+      --white: #ffffff;
+      --muted: #f5e9dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--cream);
+    }
+
+    .notice {
+      padding: 12px 18px;
+      background: #fff0cf;
+      color: #49351b;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    header {
+      background: var(--red);
+      color: var(--white);
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    header p {
+      margin: 5px 0 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px;
+      background: var(--dark);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 13px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 28px 20px 45px;
+    }
+
+    .intro {
+      background: var(--muted);
+      border-left: 7px solid var(--gold);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 28px;
+    }
+
+    .intro h2 {
+      color: var(--red);
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    h2,
+    h3 {
+      color: var(--red);
+    }
+
+    .section-title {
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 8px;
+      margin-top: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid #eadfd4;
+      border-radius: 12px;
+      padding: 21px;
+      box-shadow: 0 3px 10px rgba(41, 38, 42, 0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #fff0cf;
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 0.83rem;
+      font-weight: bold;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    .tip {
+      background: var(--dark);
+      color: var(--white);
+      padding: 24px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    .tip h2 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    .tip a {
+      color: var(--gold);
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 25px 18px;
+    }
+
+    footer p {
+      margin: 8px auto;
+      max-width: 850px;
+    }
+
+    footer a {
+      color: var(--gold);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+
+      main {
+        padding: 20px 15px 35px;
+      }
+
+      .intro {
+        padding: 20px;
+      }
+
+      .tip {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice">
+    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+  </div>
+
+  <header>
+    <h1>HawkSpot</h1>
+    <p>Your guide to student life in Iowa City</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="weekend.html">Weekend Activities</a>
+    <a href="cheap.html">Cheap Things to Do</a>
+    <a href="students.html">College Student Guide</a>
+    <a href="sports.html" aria-current="page">Sporting Events</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <span class="tag">The Hawkeye Sports Guide</span>
+      <h2>Sporting Events Happening in Iowa City This Weekend</h2>
+      <p>
+        Looking for something exciting to do this weekend? Get your friends
+        together, show off your Hawkeye spirit, and enjoy a weekend filled
+        with sports-inspired activities. From friendly competitions to
+        game-day gatherings, HawkSpot has ideas for every kind of sports fan.
+      </p>
+      <p>
+        The events, schedules, venues, prices, and organizers on this page
+        are fictional examples created for an educational class project.
+      </p>
+    </section>
+
+    <h2 class="section-title">Friday: Start the Competition</h2>
+
+    <section class="cards">
+      <article class="card">
+        <span class="tag">5:00 p.m.</span>
+        <h3>Hawkeye 3-on-3 Basketball Night</h3>
+        <p>
+          Meet fictional event organizer Alex Morgan at the made-up
+          HawkSpot Rec Court for a casual 3-on-3 basketball tournament.
+          Teams can sign up with friends or meet other students looking
+          for a game.
+        </p>
+        <p><strong>Location:</strong> Fictional HawkSpot Rec Court</p>
+        <p class="price">Fictional entry: $3 per player</p>
+        <p><strong>Best for:</strong> Basketball fans and active friend groups</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">7:00 p.m.</span>
+        <h3>Black & Gold Trivia Showdown</h3>
+        <p>
+          Test your knowledge of college sports, famous athletes, team
+          traditions, and Iowa trivia. Bring a team of up to four friends
+          and compete for a fictional HawkSpot championship trophy.
+        </p>
+        <p><strong>Location:</strong> Fictional Campus Corner Lounge</p>
+        <p class="price">Fictional entry: Free</p>
+        <p><strong>Best for:</strong> Sports fans who love competition</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">Saturday: Game-Day Energy</h2>
+
+    <section class="cards">
+      <article class="card">
+        <span class="tag">10:00 a.m.</span>
+        <h3>Hawkeye Fitness Challenge</h3>
+        <p>
+          Join a friendly team challenge featuring relay races, jump-rope
+          rounds, and simple fitness activities. Participants can compete
+          for fun without needing to be experienced athletes.
+        </p>
+        <p><strong>Location:</strong> Fictional Riverside Activity Park</p>
+        <p class="price">Fictional entry: Free</p>
+        <p><strong>Bring:</strong> Athletic shoes and a water bottle</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">1:00 p.m.</span>
+        <h3>College Football Watch Party</h3>
+        <p>
+          Wear black and gold and gather with fellow Hawkeyes to watch
+          college football. Enjoy game predictions, team spirit, and
+          conversations about the season.
+        </p>
+        <p><strong>Location:</strong> Fictional Black & Gold Social Club</p>
+        <p class="price">Fictional entry: Free</p>
+        <p><strong>Best for:</strong> Students who enjoy college football</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">3:00 p.m.</span>
+        <h3>Student Volleyball Tournament</h3>
+        <p>
+          Create a team with roommates or classmates for an afternoon of
+          recreational volleyball. Beginners are welcome, and the focus
+          is on teamwork and having fun.
+        </p>
+        <p><strong>Location:</strong> Fictional HawkSpot Sports Pavilion</p>
+        <p class="price">Fictional entry: $2 per player</p>
+        <p><strong>Best for:</strong> Friends who want to play instead of watch</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">Sunday: Finish Strong</h2>
+
+    <section class="cards">
+      <article class="card">
+        <span class="tag">9:00 a.m.</span>
+        <h3>Hawkeye Fun Run</h3>
+        <p>
+          Start Sunday with a relaxed group run or walk. Choose your own
+          pace, enjoy the outdoors, and celebrate finishing the route with
+          other students.
+        </p>
+        <p><strong>Location:</strong> Fictional Riverside Trail Start</p>
+        <p class="price">Fictional entry: Free</p>
+        <p><strong>Best for:</strong> Runners, walkers, and beginners</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">1:00 p.m.</span>
+        <h3>Pickleball Friends Tournament</h3>
+        <p>
+          Learn the basics of pickleball or challenge your friends to a
+          casual doubles match. Bring your own paddle or share equipment
+          with a teammate.
+        </p>
+        <p><strong>Location:</strong> Fictional HawkSpot Outdoor Courts</p>
+        <p class="price">Fictional entry: $2 per player</p>
+        <p><strong>Best for:</strong> Students looking to try a new sport</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">4:00 p.m.</span>
+        <h3>Fantasy Sports Meetup</h3>
+        <p>
+          Meet fellow sports fans to discuss teams, make predictions, and
+          compare your favorite players. The fictional gathering is open
+          to beginners and longtime fans alike.
+        </p>
+        <p><strong>Location:</strong> Fictional Campus Corner Lounge</p>
+        <p class="price">Fictional entry: Free</p>
+        <p><strong>Best for:</strong> Sports discussions and meeting people</p>
+      </article>
+    </section>
+
+    <section class="tip">
+      <h2>Want to Attend a Real Hawkeye Game?</h2>
+      <p>
+        This page contains fictional event listings, not verified games
+        scheduled for this weekend. For actual University of Iowa games,
+        check the official athletics website for current schedules, venues,
+        ticket information, and possible changes.
+      </p>
+      <p>
+        Visit
+        <a href="https://hawkeyesports.com/sports/football/schedule">
+          the official Iowa football schedule
+        </a>
+        to see football dates and results.
+      </p>
+      <p>
+        Before attending any real sporting event, confirm the date, location,
+        admission requirements, and ticket availability.
+      </p>
+    </section>
+
+    <p>
+      HawkSpot encourages students to enjoy sports, try new activities, and
+      connect with their campus community. All fictional events and prices
+      on this page were created for MKTG:4400 at the University of Iowa.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+    </p>
+    <p>HawkSpot | Dream up your next Iowa City adventure.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="weekend.html">Weekend Activities</a> |
+      <a href="cheap.html">Cheap Things to Do</a> |
+      <a href="students.html">College Student Guide</a> |
+      <a href="sports.html">Sporting Events</a>
+    </p>
+  </footer>
+
+</body>
+</html>
